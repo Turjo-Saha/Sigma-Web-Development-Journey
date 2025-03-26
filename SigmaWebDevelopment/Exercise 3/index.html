@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .card{
+            transform: scale(125%);
+        }
+
+        @media only screen and (max-width: 400px){
+            .card{
+                transform: scale(100%);
+            }
+        }
+
+        @media only screen and (max-width: 300px){
+            .card{
+                transform: scale(80%);
+            }
+        }
+        html,
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(206, 206, 206);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            height: max-content;
+            width: 300px;
+            padding: 0.4rem 0.5rem;
+            background-color: white;
+            border-radius: 10px;
+            /* box-shadow:-9px 8px 15px -10px rgba(0,0,0,.2); */
+            border: 0.5px solid rgb(174, 174, 174);
+        }
+
+        img {
+            height: 187px;
+            border-radius: 10px;
+            position: relative;
+            margin: 4.px;
+        }
+
+        #first {
+            margin: 10px 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: grey;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: rgb(61, 54, 54);
+            font-size: 26px;
+            margin-left: 10px;
+        }
+
+        #second {
+            margin: 25px 5px;
+        }
+        button{
+            height: 35px;
+            width: 80px;
+            border-radius: 25px;
+            border: none;
+            background-color: rgb(185, 234, 253);
+            color: rgb(63, 63, 192);
+            font-weight: bold;
+            cursor: pointer;
+            position: relative;
+            left: 100px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <span class="img">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/025/220/125/small_2x/picture-a-captivating-scene-of-a-tranquil-lake-at-sunset-ai-generative-photo.jpg"
+                    alt="">
+                </sapn>
+                <pre id="first">Nature      Lake</pre>
+                <h1>Lago di Baries</h1>
+                <pre id="second">Lorem ipsum dolor
+sit amet consectetur adipisicing elit.
+Necessitatibus minima nam provident.
+Lorem ipsum dolor sit amet.</pre>
+                <button>Read More</button>
+        </div>
+    </div>
+</body>
+
+</html>

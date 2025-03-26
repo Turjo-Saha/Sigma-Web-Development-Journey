@@ -1,0 +1,34 @@
+<style>
+    :root {
+      --color: blue;
+      --seccolor: yellow;
+    }
+    .nav {
+      background-color: var(--color);
+    }
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+    }
+    li {
+      padding: 5px;
+      margin: 5px;
+    }
+
+    ul li:first-child {
+      background-color: var(--seccolor);
+    }
+  </style>
+  <body>
+    <div class="nav">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>contact</li>
+      </ul>
+    </div>
