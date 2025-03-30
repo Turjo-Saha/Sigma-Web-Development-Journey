@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content:nth-last-child(2)::first-letter{
+            font-style: italic;
+            font-size: 30px;
+        }
+        .content::after{
+            content: "🔥";
+        }
+        ::selection{
+            color: lightgreen;
+            background-color: black;
+        }
+        input:focus::placeholder{
+            opacity: 50%;
+            transition: all 1s  ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">Hello</div>
+        <div class="content">Hello1</div>
+        <div class="content">Hello2</div>
+    </div>
+    <input type="text" placeholder="Enter you number">
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 350px;
+            height: 200px;
+            background-color: aqua;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+            animation: box 1s linear 1s infinite alternate,
+                        box2 1s linear 1s infinite alternate;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        }
+
+        @keyframes box {
+            from {
+                transform: translateX(0px);
+            }
+
+            to {
+                transform: translateX(250px);
+            }
+        }
+
+        @keyframes box2 {
+            0%{
+                background-color: lightgreen;
+            }
+            25%{
+                background-color: lightblue;
+            }
+            50%{
+                background-color: pink;
+            }
+            75%{
+                background-color: lightskyblue;
+            }
+            100%{
+                background-color: lightsalmon;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+
+</html>

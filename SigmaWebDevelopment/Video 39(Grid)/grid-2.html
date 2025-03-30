@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid rgb(0, 0, 0);
+            display: grid;
+            /* grid-template-areas: "a b c" "d e f" "g h i"; */
+            grid-template-columns: repeat(6 , minmax(100px,1fr));
+            justify-content: center;
+            width: max-content;
+            margin: auto;
+            height: 80vh;
+            place-content: center;
+            place-items: center;
+        }
+        .item{
+            border: 2px solid yellow;
+            height: 55px;
+            width: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        /* }
+        .item0{
+            grid-area: h;
+            justify-self: end;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">5</div>
+        <div class="item item0">0</div>
+    </div>
+</body>
+</html>
